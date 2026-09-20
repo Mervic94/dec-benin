@@ -1,0 +1,9 @@
+# DEC — Déménagement Express Cotonou · robots.txt
+User-agent: *
+Allow: /
+# Les pages mentions-legales.html et politique-cookies.html portent
+# leur propre balise noindex : on les laisse crawler volontairement
+# pour que Google voie ce noindex (un Disallow l'empêcherait).
+
+# TODO_OFFICIEL : remplacer par votre domaine définitif avant la mise en ligne
+Sitemap: https://www.dec-benin.com/sitemap.xml
