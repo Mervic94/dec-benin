@@ -128,13 +128,13 @@
     <h1 class="rv load" style="--d:.06s" data-en="Your move, simply.">Votre déménagement, <span class="accent">simplement.</span></h1>
     <p class="hero-sub rv load" style="--d:.12s" data-en="From Cotonou to the main cities of Benin and beyond, DEC supports you from packing to delivery.">De Cotonou aux principales villes du Bénin et au-delà, DEC vous accompagne de l'emballage à la livraison.</p>
 
-    <!-- TODO_OFFICIEL : vraie photo → assets/images/hero.webp 📸 Photo à fournir — assets/images/hero.webp -->
+    <!-- TODO_OFFICIEL : vraie photo → assets/images/hero.webp -->
     <figure class="hero-media rv load" style="--d:.18s;background:var(--brand-soft);margin-top:24px">
       <img src="assets/images/hero.webp"
            alt="Équipe DEC de Déménagement Express Cotonou en train de charger des cartons dans un camion"
            width="1200" height="675" loading="eager"
            onerror="this.remove()">
-      <figcaption style="position:absolute;left:0;right:0;bottom:0;background:linear-gradient(transparent,rgba(28,20,18,.85));color:#fff;font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;padding:26px 14px 10px"></figcaption>
+      <figcaption style="position:absolute;left:0;right:0;bottom:0;background:linear-gradient(transparent,rgba(28,20,18,.85));color:#fff;font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;padding:26px 14px 10px">📸 Photo à fournir — assets/images/hero.webp</figcaption>
     </figure>
 
     <div class="cta-row rv load" style="--d:.24s">
@@ -445,14 +445,16 @@
           <div class="tst-who"><span class="avatar">FN</span><div><b>Fabrice N.</b><span>Abomey-Calavi → Bohicon</span></div></div>
         </article>
       </div>
-      <button class="tst-arrow tst-prev" id="tstPrev" type="button" aria-label="Témoignage précédent">
-        <svg class="ico" style="width:18px;height:18px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+    </div>
+    <div class="tst-nav">
+      <button class="tst-btn" id="tstPrev" type="button" aria-label="Témoignage précédent">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
       </button>
-      <button class="tst-arrow tst-next" id="tstNext" type="button" aria-label="Témoignage suivant">
-        <svg class="ico" style="width:18px;height:18px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+      <div class="tst-dots" id="tstDots" role="tablist" aria-label="Choisir un témoignage"></div>
+      <button class="tst-btn" id="tstNext" type="button" aria-label="Témoignage suivant">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
       </button>
     </div>
-    <div class="tst-dots" id="tstDots" role="tablist" aria-label="Choisir un témoignage"></div>
   </div>
 </section>
 
@@ -535,6 +537,17 @@
     </div>
   </div>
 </section>
+
+</main>
+
+<!-- Footer enrichi par main.js (navigation essentielle déjà en dur au-dessus) -->
+<footer id="siteFooter"></footer>
+
+<!-- Barre mobile en dur -->
+<div class="mbar">
+  <a class="m-call" href="tel:+2290166355509"><svg class="ico" style="width:17px;height:17px"><use href="#ic-phone"/></svg><span data-en="Call">Appeler</span></a>
+  <a class="m-wa" data-wa-generic target="_blank" rel="noopener" href="#"><svg class="ico" style="width:19px;height:19px"><use href="#ic-wa"/></svg>WhatsApp</a>
+</div>
 
 <!-- ============ PANNEAUX « EN SAVOIR PLUS » (fonctionnalité conservée) ============ -->
 <aside class="panel" id="p-res" role="dialog" aria-modal="true" aria-labelledby="t-res">
@@ -647,115 +660,6 @@
       </div>
     </div>
     <div class="panel-cta">
-      <a class="btn btn-wa" data-wa-panel="intl" target="_blank" rel="noopener" href="#"><svg class="ico" style="width:17px;height:17px"><use href="#ic-wa"/></svg><span data-en="Prepare my international move">Préparer mon déménagement international</span></a>
-      <a class="btn btn-ghost" data-close-and-go href="devis.html"><span data-en="Open the estimator">Ouvrir l'estimateur</span><svg class="ico" style="width:15px;height:15px"><use href="#ic-arr"/></svg></a>
-    </div>
-  </div>
-</aside>
-
-<script src="assets/js/main.js" defer></script>
-<script src="assets/js/estimator.js" defer></script>
-</body>
-</html>>
-
-    <div class="panel-head">
-      <span class="srv-ico"><svg class="ico"><use href="#ic-globe"/></svg></span>
-      <div class="ph-txt"><h3 id="t-intl" data-en="International moves">Déménagement international</h3><span class="script" data-en="Customs dealt with by DEC.">La douane, c'est notre affaire.</span></div>
-      <button class="panel-close" data-close aria-label="Fermer"><svg class="ico"><use href="#ic-x"/></svg></button>
-    </div>
-    <div class="panel-body">
-      <div class="panel-col">
-        <h4 data-en="What's included">Ce qui est inclus</h4>
-        <ul class="inc-list">
-          <li><svg class="ico"><use href="#ic-check"/></svg><span data-en="Customs &amp; forwarding paperwork handled">Formalités douanières &amp; transitaires gérées</span></li>
-          <li><svg class="ico"><use href="#ic-check"/></svg><span data-en="Reinforced packing for fragile items">Emballage renforcé pour les objets fragiles</span></li>
-          <li><svg class="ico"><use href="#ic-check"/></svg><span data-en="Daily WhatsApp tracking">Suivi WhatsApp quotidien</span></li>
-          <li><svg class="ico"><use href="#ic-check"/></svg><span data-en="Passport/ID copy + valued goods list required">Passeport/CNI + liste de biens valorisée requises</span></li>
-          <li><svg class="ico"><use href="#ic-check"/></svg><span data-en="Destinations confirmed case by case">Destinations confirmées au cas par cas</span></li>
-        </ul>
-      </div>
-      <div class="panel-col">
-        <h4 data-en="Indicative prices">Tarifs indicatifs</h4>
-        <table class="ptable"><tbody>
-          <tr><td>Lomé</td><td><span data-en="from 149,000 F">dès 149 000 F</span></td></tr>
-          <tr><td>Accra</td><td><span data-en="from 249,000 F">dès 249 000 F</span></td></tr>
-          <tr><td>Abidjan</td><td><span data-en="from 349,000 F">dès 349 000 F</span></td></tr>
-          <tr><td>Niamey / Ouagadougou</td><td><span data-en="from 420,000 F">dès 420 000 F</span></td></tr>
-          <tr><td data-en="Rest of the world">Reste du monde</td><td><span data-en="freight on quote">fret sur devis</span></td></tr>
-        </tbody></table>
-        <div class="pnote"><b data-en="Good to know">Bon à savoir</b>
-          <p data-en="Allow 10 to 15 days for a sub-regional move. Definitive amount confirmed by DEC.">Comptez 10 à 15 jours pour un déménagement sous-régional. Montant définitif confirmé par DEC.</p>
-        </div>
-      </div>
-    </div>
-    <div class="panel-cta">
-      <a class="btn btn-wa" data-wa-panel="intl" target="_blank" rel="noopener" href="#"><svg class="ico" style="width:17px;height:17px"><use href="#ic-wa"/></svg><span data-en="Prepare my international move">Préparer mon déménagement international</span></a>
-      <a class="btn btn-ghost" data-close-and-go href="devis.html"><span data-en="Open the estimator">Ouvrir l'estimateur</span><svg class="ico" style="width:15px;height:15px"><use href="#ic-arr"/></svg></a>
-    </div>
-  </div>
-</aside>
-
-<script src="assets/js/main.js" defer></script>
-<script src="assets/js/estimator.js" defer></script>
-</body>
-
-</html>
-pnote"><b data-en="Good to know">Bon à savoir</b>
-          <p data-en="Allow 10 to 15 days for a sub-regional move. Definitive amount confirmed by DEC.">Comptez 10 à 15 jours pour un déménagement sous-régional. Montant définitif confirmé par DEC.</p>
-        </div>
-      </div>
-    </div>
-    <div class="panel-cta">
-      <a class="btn btn-wa" data-wa-panel="intl" target="_blank" rel="noopener" href="#"><svg class="ico" style="width:17px;height:17px"><use href="#ic-wa"/></svg><span data-en="Prepare my international move">Préparer mon déménagement international</span></a>
-      <a class="btn btn-ghost" data-close-and-go href="devis.html"><span data-en="Open the estimator">Ouvrir l'estimateur</span><svg class="ico" style="width:15px;height:15px"><use href="#ic-arr"/></svg></a>
-    </div>
-  </div>
-</aside>
-
-<script src="assets/js/main.js" defer></script>
-<script src="assets/js/estimator.js" defer></script>
-</body>
-</html> the estimator">Ouvrir l'estimateur</span><svg class="ico" style="width:15px;height:15px"><use href="#ic-arr"/></svg></a>
-    </div>
-  </div>
-</aside>
-
-<script src="assets/js/main.js" defer></script>
-<script src="assets/js/estimator.js" defer></script>
-</body>
-</html></tbody></table>
-        <div class="pnote"><b data-en="Good to know">Bon à savoir</b>
-          <p data-en="Allow 10 to 15 days for a sub-regional move. Definitive amount confirmed by DEC.">Comptez 10 à 15 jours pour un déménagement sous-régional. Montant définitif confirmé par DEC.</p>
-        </div>
-      </div>
-    </div>
-    <div class="panel-cta">
-      <a class="btn btn-wa" data-wa-panel="intl" target="_blank" rel="noopener" href="#"><svg class="ico" style="width:17px;height:17px"><use href="#ic-wa"/></svg><span data-en="Prepare my international move">Préparer mon déménagement international</span></a>
-      <a class="btn btn-ghost" data-close-and-go href="devis.html"><span data-en="Open the estimator">Ouvrir l'estimateur</span><svg class="ico" style="width:15px;height:15px"><use href="#ic-arr"/></svg></a>
-    </div>
-  </div>
-</aside>
-
-<script src="assets/js/main.js" defer></script>
-<script src="assets/js/estimator.js" defer></script>
-</body>
-</html>
-/p>
-        </div>
-      </div>
-    </div>
-    <div class="panel-cta">
-      <a class="btn btn-wa" data-wa-panel="intl" target="_blank" rel="noopener" href="#"><svg class="ico" style="width:17px;height:17px"><use href="#ic-wa"/></svg><span data-en="Prepare my international move">Préparer mon déménagement international</span></a>
-      <a class="btn btn-ghost" data-close-and-go href="devis.html"><span data-en="Open the estimator">Ouvrir l'estimateur</span><svg class="ico" style="width:15px;height:15px"><use href="#ic-arr"/></svg></a>
-    </div>
-  </div>
-</aside>
-
-<script src="assets/js/main.js" defer></script>
-<script src="assets/js/estimator.js" defer></script>
-</body>
-</html>
-a">
       <a class="btn btn-wa" data-wa-panel="intl" target="_blank" rel="noopener" href="#"><svg class="ico" style="width:17px;height:17px"><use href="#ic-wa"/></svg><span data-en="Prepare my international move">Préparer mon déménagement international</span></a>
       <a class="btn btn-ghost" data-close-and-go href="devis.html"><span data-en="Open the estimator">Ouvrir l'estimateur</span><svg class="ico" style="width:15px;height:15px"><use href="#ic-arr"/></svg></a>
     </div>
